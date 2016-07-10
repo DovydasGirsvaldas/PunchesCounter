@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dovydas.punchescounter.EndRoundFragment"
+    android:orientation="vertical"
+    android:background="@drawable/canvas"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round x"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/roundLabel"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/redBoxerName"
+            android:text="Floyd"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueBoxerName"
+            android:text="Manny"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/redBoxerPunches"
+            android:text="7"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": punches landed :"
+            android:gravity="center"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueBoxerPunches"
+            android:text="5"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:weightSum="2">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btnPlusRed"
+            android:background="@drawable/up"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/redScore"
+            android:text="10"
+            android:textSize="32sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btnMinusRed"
+            android:background="@drawable/down"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": score :"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btnPlusBlue"
+            android:background="@drawable/up"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueScore"
+            android:textSize="32sp"
+            android:text="10"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btnMinusBlue"
+            android:background="@drawable/down"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOutcome"
+        android:background="@drawable/main_buttons"
+        android:text="Fight finished"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDoneRound"
+        android:background="@drawable/main_buttons"
+        android:text="Next Round"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

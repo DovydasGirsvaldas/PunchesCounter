@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PunchesCounter</string>
+    <string name="newFight">New Fight</string>
+    <string name="history">History</string>
+    <string name="howToScore">How to score</string>
+    <string name="rounds">Round count:</string>
+    <string name="fighters">Fighters:</string>
+    <string name="redBoxer">red boxer</string>
+    <string name="blueBoxer">blue boxer</string>
+    <string name="hintNameOfFighter">Name of the fighter</string>
+    <string name="start">Start</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scorecard">ScorecardActivity</string>
+    <string name="enter_name">(enter name)</string>
+</resources>

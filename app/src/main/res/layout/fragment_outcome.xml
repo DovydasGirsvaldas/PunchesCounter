@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dovydas.punchescounter.OutcomeFragment"
+    android:orientation="vertical"
+    android:background="@drawable/canvas">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+    <RadioButton
+        android:id="@+id/redKO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioButton
+        android:id="@+id/redDQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioButton
+        android:id="@+id/blueKO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioButton
+        android:id="@+id/blueDQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioButton
+        android:id="@+id/nc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnFinishFight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to scorecard"
+        android:layout_weight="1"
+        android:background="@drawable/main_buttons"
+        android:layout_margin="35dp"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_weight="1"
+        android:background="@drawable/main_buttons"
+        android:layout_margin="35dp"
+        android:textSize="20sp" />
+</LinearLayout>
